@@ -85,18 +85,18 @@ main ul li {
      font-size: .9rem; 
 }
 main address {
-    font-style: normal;
-    background-color: #FACFCE;
-    padding: .5rem;
+    font-style: italic;
+    background-color: #FFF;
+    padding: .9rem;
     width: 12.5rem;
-    border: 2px solid #D08F8C;
+    border: 3px dotted #D08F8C;
     border-radius: 9px;
 }
 main a {
-    color: #D56773;
+    color: deeppink;
 }
 main a:hover {
-    color: #023535;
+    color: palevioletred;
 }
 
 /* footer stuff */
@@ -109,7 +109,9 @@ footer {
     font-size: .8rem;
 }
 footer a {
-     color: #FFFF;
-    
+     color: white;
+}
+footer a:hover  {
+    color:cyan;
     
 }
