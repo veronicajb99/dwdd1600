@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+    <title>Fashion Now: Trends</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="description" content="Learn About the Latest Fashion Trends">
+    <meta name="author" content="Veronica Jaramillo">
+     <link rel="stylesheet" href="fashionnow.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;700&display=swap" rel="stylesheet">
+        
+    <link rel="icon" type="image/x-icon" href="favicon.ico">     
+        
+    </head>
+    <body>
+    
+<!-- start of the page header -->
+    <header>
+         <img src="images/fashionnowlogo-resize.png" alt="fashion now logo" width="99" height="100">
+    
+     
+        <div>
+           <h1>Fashion Now</h1>
+            <p>Fashion at Your Fingertips!</p>
+        </div>
+        </header>
+        
+<!-- start of the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Latest News</a></li>
+            <li><a href="trends.html">2024 Spring Fashion Week</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+             <li class="active"><a href="magazine.html">FN Magazine</a></li>
+        </ul>
+        </nav>
+ 
+        
+         <!-- start the page main -->
+    <main>
+    <h1>Sign up for Fashion Now Magazine</h1>
+        <form method="get" class="myForm" action="thanks.html">
+        
+            <fieldset>
+                <legend> Customer Information</legend>
+                <label> First & Last Name*<input type="text" name="flname" required></label>
+                <label> E-mail*<input type="text" name="email" required></label><label> Cell Number*<input type="tel" name="phone" required placeholder="444-444-4444"></label>
+            </fieldset>
+            
+            <fieldset>
+            <legend>Format</legend>
+                <label><input type="radio" name="format" value="physical"> 
+            Physical Copy (1-3 Business Days)</label>
+                <label><input type="radio" name="format" value="digital">  Digital Download</label> 
+            <legend></legend>
+                <label><input type="radio" name="format" value="print"> Print File</label>
+            </fieldset>
+            
+            <fieldset>
+            <legend> Delivery Options (Physical Copy Only)</legend>    
+                <label><input type="checkbox" name="house" value="chosen"> Mailbox</label>
+                 <label><input type="checkbox" name="porch" value="chosen"> Drop off at Door</label>
+                 <label><input type="checkbox" name="porch" value="chosen"> Post Office Pick Up</label>
+                 <label><input type="checkbox" name="porch" value="chosen">Leasing Office Drop Off</label>
+                
+                <label>Preferred Delivery Service
+                <select name="time">
+                <option value="none">Please Select</option>
+                <option value="morning"> Ground Advantage</option>
+                <option value="noon">Priority Mail ($5.00) </option>
+                <option value="evening">First Class Mail ($7.50)</option>
+                </select>
+                </label>
+            </fieldset>
+            
+            <label>Suggestions for the Writers
+                <textarea name="comments"></textarea>
+            </label>
+            
+          <input type="submit" value="Send Delivery Request">
+        </form> 
+    </main>
+        
+     <!-- start of the page footer -->
+    <footer>
+    <p>&copy; 2024 &bull; Veronica Jaramillo &bull; <a href="mailto:jb.veronicaa@gmail.com">Email Us</a></p>    
+    </footer>
+        
+</body>
+</html>
+    
