@@ -61,7 +61,65 @@ header p {
         height: auto;
         padding-bottom: 20px;
     } 
-} /*end of media query*/
+        
+.mainhero {
+    width: 100%;
+    margin: 0;
+}
+.mainhero img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+} 
+main {
+    padding: 1rem 2%;
+}
+main h1 {
+    color: #23606E;
+}
+main h2 {
+    color: #23606E;
+    margin-bottom: .2rem;  
+}
+main p {
+    color: #23606E;
+    margin: 0 0 .3rem 0;  
+}
+main ol {
+    padding: .5rem 5%;
+    background-color: #C2E6E3;
+}
+main dl dt {
+    color: #D08F8C;
+    font-weight: 700;
+}
+main dl dd {
+    color: #23606E;
+    font-size: .9rem; 
+}
+main ul {
+    list-style-type: disc;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+     font-size: .9rem; 
+}
+main address {
+    font-style: italic;
+    background-color: #FFF;
+    padding: .9rem;
+    width: 20px 1px;
+    border: 3px dotted #D08F8C;
+    border-radius: 15px;
+}
+main a {
+    color: deeppink;
+}
+main a:hover {
+    color: palevioletred;
+}
+}
 
 /* BIG SCREENS */
 
@@ -115,7 +173,7 @@ main h2 {
     margin-bottom: .2rem;  
 }
 main p {
-    color: #2f3133;
+    color: #23606E;
     margin: 0 0 .3rem 0;  
 }
 main ol {
@@ -127,7 +185,7 @@ main dl dt {
     font-weight: 700;
 }
 main dl dd {
-    color: #2f3133;
+    color: #23606E;
     font-size: .9rem; 
 }
 main ul {
@@ -186,12 +244,12 @@ div.gallery img:hover {
     box-shadow: 0px 0px 10px #aaa;
 }
 .myForm fieldset {
-    border: 1px solid #43a0b6;
+    border: 3px dashed #D08F8C;
     border-radius: 3px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 .myForm legend {
-    color: #43a0b6;
+    color: #D08F8C;
     font-size: .8rem;
 }
 .myForm label{
@@ -199,14 +257,12 @@ div.gallery img:hover {
 }
 .myForm label, .myForm selec, .myForm [type=text], .myForm [type=tel], .myForm textarea {
     display: block;
-    
 }
-
-.myForm  [type=text], .myForm [type=tel], .myForm select, .myForm textarea
+.myForm  [type=text], .myForm [type=tel], .myForm [type=email], .myForm select, .myForm textarea
 {
-    border: solid 1px #888;
-    padding: .3rem;
-    width: 250px;
+    border: solid 1px #D08F8C;
+    padding-top: .3rem;
+    width: 180px;
     border-radius: .3rem;
     font-family: 'Monsterrat', sans-serif;
     font-size: 16px;
@@ -215,6 +271,7 @@ div.gallery img:hover {
 }
 .myForm textarea {
     height: 6rem;
+    border:  1px solid #D08F8C;
     
 }
 
