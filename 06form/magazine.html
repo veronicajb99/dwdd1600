@@ -53,30 +53,33 @@
             </fieldset>
             
             <fieldset>
-            <legend>Format Type</legend>
+            <legend>Membership Packages</legend>    
+                <label>Membership Type:
+                <select name="mpackage">
+                <option value="select">Select One</option>
+                <option value="weekly">Weekly Membership $3.00/week </option>
+                <option value="monthly">Monthly Membership $12.00/mo</option>
+                <option value="yearly">Yearly Membership $150.00/yr</option>
+                </select>
+                </label> 
+            </fieldset>
+            
+            <fieldset>
+            <legend>Magazine Format</legend>
                 <label><input type="radio" name="format" value="digital">  Online Access</label> 
                 <label><input type="radio" name="format" value="print"> Print File</label>
             </fieldset>
             
             <fieldset>
-            <legend> Magazine Packages</legend>    
-                <label><input type="checkbox" name="house" value="chosen">Magazine of the Month</label>
-                 <label><input type="checkbox" name="porch" value="chosen">Online Gallery Key Access</label>
-                 <label><input type="checkbox" name="porch" value="chosen">Monthly Mistery Gift</label>
-                 <label><input type="checkbox" name="porch" value="chosen">Exclusive Early Access to Fashion Reviews</label>
-                
-                <label>Membership Type:
-                <select name="time">
-                <option value="none">Select Membership</option>
-                <option value="morning">Weekly Membership $3.00/week </option>
-                <option value="noon">Monthly Membership $12.00/mo</option>
-                <option value="evening">Yearly Membership $150.00/yr</option>
-                </select>
-                </label>
+                <legend>Choose +1 Items</legend>
+                <label><input type="checkbox" name="mag" value="chosen">Magazine of the Month</label>
+                 <label><input type="checkbox" name="key" value="chosen">Online Gallery Key Access</label>
+                 <label><input type="checkbox" name="gift" value="chosen">Monthly Mistery Gift</label>
+                 <label><input type="checkbox" name="xclusive" value="chosen">Exclusive Early Access to Fashion Reviews</label>
             </fieldset>
             
             <label>Suggestions
-                <textarea name="comments"></textarea>
+                <textarea name="comments" placeholder="text here..."></textarea>
             </label>
             
           <input type="submit" value="Sign Me Up!">
