@@ -1,3 +1,6 @@
+/* prevent problems with different browsers */
+* {box-sizing: border-box;}
+
 body {
 font-family: 'Monsterrat', sans-serif;
 font-size: 16px;
@@ -8,8 +11,13 @@ margin: .0;
 /* Header Stuff Here */
 
 header {
-    background-color: #FACFCE; 
+    background-color: white; 
     padding: 1rem 2%;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 1.5vw;
 }
 header h1 {
     margin: 0;
@@ -20,36 +28,49 @@ header p {
     color: #023535;
     letter-spacing: .5px;
 }
-/* Navigation Stuff Here */
-nav {
-    background-color: #23606E;
-   
-}
-nav ul {
-    list-style-type: none;
-    padding: 0 2%;
-    margin: 0;
-    display: flex;
-}
-nav a {
-   font-size: 1.1rem;
-    text-decoration: none;
-    color: #C2E6E3;
-    font-weight: 700;
-    display: block;
-    padding: .83rem 2rem;
-    
-    
-}
-nav li.active a {
-    background-color: #23606E;
-    color:  #2f3133;
-}
-nav a:hover {
-    color: #FACFCE;  
-}
+/* SMALL screens*/
 
-/* stuff for the main */
+@media only screen and (max-width: 800px) {
+    
+    nav ul {
+        margin: 0;
+        padding: 0 2%;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1.35px #C2E6E3;
+        color: #023535;
+    }
+    nav .active a {
+        background-color: #023535;
+        color: white;
+        background-image: linear-gradient(to bottom, #94cdc8, #81a3a0)
+    }
+    .mainhero {
+        width: 100%;
+        margin: 0;
+    }
+    .mainhero img {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    } 
+        
+.mainhero {
+    width: 100%;
+    margin: 0;
+}
+.mainhero img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+} 
 main {
     padding: 1rem 2%;
 }
@@ -61,7 +82,7 @@ main h2 {
     margin-bottom: .2rem;  
 }
 main p {
-    color: #2f3133;
+    color: #23606E;
     margin: 0 0 .3rem 0;  
 }
 main ol {
@@ -73,7 +94,98 @@ main dl dt {
     font-weight: 700;
 }
 main dl dd {
-    color: #2f3133;
+    color: #23606E;
+    font-size: .9rem; 
+}
+main ul {
+    list-style-type: disc;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+     font-size: .9rem; 
+}
+main address {
+    font-style: italic;
+    background-color: #FFF;
+    padding: .9rem;
+    width: 20px 1px;
+    border: 3px dotted #D08F8C;
+    border-radius: 15px;
+}
+main a {
+    color: deeppink;
+}
+main a:hover {
+    color: palevioletred;
+}
+}
+
+/* BIG SCREENS */
+
+    @media only screen and (min-width: 801px) {
+    
+    nav {
+    background-color: #23606E;
+   
+        }
+        nav ul {
+    list-style-type: none;
+    padding: 0 2%;
+    margin: 0;
+    display: flex;
+        }
+        nav a {
+   font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+        }
+        nav li.active a {
+    background-color: #23606E;
+            color:  #C2E6E3;
+        }
+        nav a:hover {
+    color: #FACFCE;  
+        }
+
+/* stuff for the main */
+    
+.mainhero {
+    width: 100%;
+    margin: 0;
+}
+.mainhero img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+} 
+main {
+    padding: 1rem 2%;
+}
+main h1 {
+    color: #23606E;
+}
+main h2 {
+    color: #23606E;
+    margin-bottom: .2rem;  
+}
+main p {
+    color: #23606E;
+    margin: 0 0 .3rem 0;  
+}
+main ol {
+    padding: .5rem 5%;
+    background-color: #C2E6E3;
+}
+main dl dt {
+    color: #D08F8C;
+    font-weight: 700;
+}
+main dl dd {
+    color: #23606E;
     font-size: .9rem; 
 }
 main ul {
@@ -98,10 +210,15 @@ main a {
 main a:hover {
     color: palevioletred;
 }
+   
+} /*end of media query*/
+
+
 figure.wrapped {
     width: 30%;
     margin: 0 0 0 2%;
     float: right;
+    padding-top: 25px;
 }
 figure.wrapped img {
     width: 100%;
@@ -112,10 +229,9 @@ figure.wrapped figcaption {
     font-size: .75rem;
     color: #b64e11;
 }
-div.gallery{
+div.gallery {
      display: flex;
     flex-wrap: wrap;
-
 }
 div.gallery figure {
      margin: .5rem 2% 0 0;
@@ -124,30 +240,29 @@ div.gallery figcaption {
     text-align: center;
     font-size: .8rem;
 }
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px #aaa;
+}
 .myForm fieldset {
-    border: 1px solid #43a0b6;
+    border: 3px dashed #D08F8C;
     border-radius: 3px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 .myForm legend {
-    color: #43a0b6;
+    color: #D08F8C;
     font-size: .8rem;
-    
 }
 .myForm label{
     margin: .5rem;
-    
 }
-.myForm label, .myForm selec, .myForm [type=text], .myForm [type=tel], .myForm [type-email], .myForm textarea {
+.myForm label, .myForm selec, .myForm [type=text], .myForm [type=tel], .myForm textarea {
     display: block;
-    
 }
-
 .myForm  [type=text], .myForm [type=tel], .myForm [type=email], .myForm select, .myForm textarea
 {
-    border: solid 1px #888;
-    padding: .3rem;
-    width: 250px;
+    border: solid 1px #D08F8C;
+    padding-top: .3rem;
+    width: 180px;
     border-radius: .3rem;
     font-family: 'Monsterrat', sans-serif;
     font-size: 16px;
@@ -156,6 +271,7 @@ div.gallery figcaption {
 }
 .myForm textarea {
     height: 6rem;
+    border:  1px solid #D08F8C;
     
 }
 
@@ -164,13 +280,15 @@ div.gallery figcaption {
 }
 
 .myForm [type=submit] {
-    background-color: #43a0b6;
+    background-color: #D08F8C;
     border: none;
     padding: 1rem 2rem;
     border-radius: 10px;
     color: white;
     margin: 1rem 0 0vw;
-    
+    margin-bottom: 10px;
+    margin-left: 8px;
+        
 }
 /* footer stuff */
 
@@ -186,4 +304,9 @@ footer a {
 }
 footer a:hover  {
     color:cyan;   
+}
+
+header, nav, main, footer{
+    max-width: 64rem;
+    margin: 0 auto;
 }

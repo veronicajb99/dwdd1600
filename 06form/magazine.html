@@ -13,15 +13,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;700&display=swap" rel="stylesheet">
         
+    <link rel="icon" type="image/x-icon" href="favicon.ico">     
+        
     </head>
     <body>
     
 <!-- start of the page header -->
     <header>
+         <img src="images/fashionnowlogo-resize.png" alt="fashion now logo" width="99" height="100">
     
-        <h1>Fashion Now</h1>
-        <p>Fashion at Your Fingertips!</p>
-    </header> 
+     
+        <div>
+           <h1>Fashion Now</h1>
+            <p>Fashion at Your Fingertips!</p>
+        </div>
+        </header>
         
 <!-- start of the page navigation -->
     <nav>
@@ -40,42 +46,41 @@
         <form method="get" class="myForm" action="thanks.html">
         
             <fieldset>
-                <legend> Customer Information</legend>
-                <label> First & Last Name*<input type="text" name="flname" required></label>
-                <label> E-mail*<input type="text" name="email" required></label><label> Cell Number*<input type="tel" name="phone" required placeholder="444-444-4444"></label>
+                <legend>Your Information</legend>
+                <label> First &#43; Last Name*<input type="text" name="flname" placeholder="Jane Doe" required></label>
+                <label> E-mail*<div><input type="email" name="email" required placeholder="jane_doe@gmail.com"></div></label>
+                <label> Cell Number*<input type="tel" name="phone" required placeholder="444-444-4444"></label>
             </fieldset>
             
             <fieldset>
-            <legend>Format</legend>
-                <label><input type="radio" name="format" value="physical"> 
-            Physical Copy (1-3 Business Days)</label>
-                <label><input type="radio" name="format" value="digital">  Digital Download</label> 
+            <legend>Format Type</legend>
+                <label><input type="radio" name="format" value="digital">  Online Access</label> 
             <legend></legend>
                 <label><input type="radio" name="format" value="print"> Print File</label>
             </fieldset>
             
             <fieldset>
-            <legend> Delivery Options (Physical Copy Only)</legend>    
-                <label><input type="checkbox" name="house" value="chosen"> Mailbox</label>
-                 <label><input type="checkbox" name="porch" value="chosen"> Drop off at Door</label>
-                 <label><input type="checkbox" name="porch" value="chosen"> Post Office Pick Up</label>
-                 <label><input type="checkbox" name="porch" value="chosen">Leasing Office Drop Off</label>
+            <legend> Magazine Packages</legend>    
+                <label><input type="checkbox" name="house" value="chosen">Magazine of the Month</label>
+                 <label><input type="checkbox" name="porch" value="chosen">Online Gallery Key Access</label>
+                 <label><input type="checkbox" name="porch" value="chosen">Monthly Mistery Gift</label>
+                 <label><input type="checkbox" name="porch" value="chosen">Exclusive Early Access to Fashion Reviews</label>
                 
-                <label>Preferred Delivery Service
+                <label>Membership Type: <div></div>
                 <select name="time">
-                <option value="none">Please Select</option>
-                <option value="morning"> Ground Advantage</option>
-                <option value="noon">Priority Mail ($5.00) </option>
-                <option value="evening">First Class Mail ($7.50)</option>
+                <option value="none">Select Membership</option>
+                <option value="morning">Weekly Membership $3.00/week </option>
+                <option value="noon">Monthly Membership $12.00/mo</option>
+                <option value="evening">Yearly Membership $150.00/yr</option>
                 </select>
                 </label>
             </fieldset>
             
-            <label>Suggestions for the Writers
-                <textarea name="comments">*optional*</textarea>
+            <label>Suggestions
+                <textarea name="comments"></textarea>
             </label>
             
-          <input type="submit" value="Send Delivery Request">
+          <input type="submit" value="Sign Me Up!">
         </form> 
     </main>
         
