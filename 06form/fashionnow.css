@@ -255,7 +255,7 @@ div.gallery img:hover {
 .myForm label{
     margin: .5rem;
 }
-.myForm label, .myForm selec, .myForm [type=text], .myForm [type=tel], .myForm textarea {
+.myForm label, .myForm selec, .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm textarea {
     display: block;
 }
 .myForm  [type=text], .myForm [type=tel], .myForm [type=email], .myForm select, .myForm textarea
